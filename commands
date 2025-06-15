@@ -12,3 +12,9 @@ git push github main
 git push gitlab main
 #Create a new branch as called jseY
 git checkout -b jsey
+#Delete remote origin
+git remote remove origin
+#Set remote URL
+git remote add hello-git git@github.com:RJyilmaz/hello-git.git
+#Pushing the new commit with different branch
+git push hello-git jsey
