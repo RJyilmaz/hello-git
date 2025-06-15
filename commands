@@ -1,1 +1,14 @@
 git config --list --show-origin
+#check ssh-keys
+ls ~/.ssh/id_rsa.pub
+#Add remote url
+git remote set-url origin git@github.com:USERNAME/REPO.git
+
+#Different repo
+git remote add github git@github.com:user/repo.git
+git remote add gitlab git@gitlab.com:user/repo.git
+#Push
+git push github main
+git push gitlab main
+#Create a new branch as called jseY
+git checkout -b jsey
